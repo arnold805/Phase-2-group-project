@@ -1,0 +1,55 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "type": "Sedan",
+      "make": "Toyota" ,
+      "model": "Corolla",
+      "condition": "New" ,
+      "price": "18,000",
+      "image": "/public/vehicleImages/toyota_corolla.jpeg",
+      "favorited": false
+    },
+    {
+      "id": 2,
+      "type": "Sedan",
+      "make": "Honda" ,
+      "model": "Civic",
+      "condition": "Used" ,
+      "price": "20,000",
+      "image": "/public/vehicleImages/honda_civic.jpeg",
+      "favorited": false
+    },
+    {
+      "id": 3,
+      "type": "Sedan",
+      "make": "Nissan" ,
+      "model": "Altima",
+      "condition": "New" ,
+      "price": "22,000",
+      "image": "/public/vehicleImages/nissan_altima.jpg",
+      "favorited": false
+    },
+    {
+      "id": 4,
+      "type": "Truck",
+      "make": "Chevrolet" ,
+      "model": "Silverado",
+      "condition": "Used" ,
+      "price": "32,000",
+      "image": "/public/vehicleImages/chevy_silverado.jpg",
+      "favorited": false
+    },
+    {
+      "id": 5,
+      "type": "Sedan",
+      "make": "Chevrolet" ,
+      "model": "Malibu",
+      "condition": "New" ,
+      "price": "21,000",
+      "image": "/public/vehicleImages/chevy_malibu.jpg",
+      "favorited": false
+    }
+
+  ]
+}
