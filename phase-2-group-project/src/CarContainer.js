@@ -1,13 +1,18 @@
 import React from "react";
+import CarCard from "./CarCard"
 
-function CarContainer({listings}) {
+function CarContainer({cars}) {
 
 
 
 return (
     <main>
-        <ul classname="cars">
-        {/* post listings here */}
+        <ul className="cars">
+        
+       {cars.map((car) => {
+           return <CarCard key={car.id} car={car} />
+
+       })}
         </ul>
     </main>
 )

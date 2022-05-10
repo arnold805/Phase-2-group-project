@@ -3,7 +3,7 @@ import React from "react";
 function UsedCars() {
     return (
         <div className="UsedCars">
-            Header
+            Used Cars
         </div>
     )
 }

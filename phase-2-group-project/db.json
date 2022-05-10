@@ -7,7 +7,7 @@
       "model": "Corolla",
       "condition": "New" ,
       "price": "18,000",
-      "image": "/public/vehicleImages/toyota_corolla.jpeg",
+      "image": "https://www.motorbiscuit.com/wp-content/uploads/2021/10/2022-Toyota-Corolla-Hybrid-Cover.jpeg",
       "favorited": false
     },
     {
@@ -17,7 +17,7 @@
       "model": "Civic",
       "condition": "Used" ,
       "price": "20,000",
-      "image": "/public/vehicleImages/honda_civic.jpeg",
+      "image": "https://static.cargurus.com/images/site/2017/07/02/18/31/2018_honda_civic_type_r_touring_hatchback-pic-8187543683903874043-1600x1200.jpeg",
       "favorited": false
     },
     {
@@ -27,7 +27,7 @@
       "model": "Altima",
       "condition": "New" ,
       "price": "22,000",
-      "image": "/public/vehicleImages/nissan_altima.jpg",
+      "image": "https://autotrends.org/images/nissan-altima-2022-02.jpg",
       "favorited": false
     },
     {
@@ -37,7 +37,7 @@
       "model": "Silverado",
       "condition": "Used" ,
       "price": "32,000",
-      "image": "/public/vehicleImages/chevy_silverado.jpg",
+      "image": "https://carfax-img.vast.com/carfax/v2/-1741759840086675359/1/344x258",
       "favorited": false
     },
     {
@@ -47,7 +47,7 @@
       "model": "Malibu",
       "condition": "New" ,
       "price": "21,000",
-      "image": "/public/vehicleImages/chevy_malibu.jpg",
+      "image": "https://images.dealer.com/ddc/vehicles/2022/Chevrolet/Malibu/Sedan/still/front-left/front-left-640-en_US.jpg",
       "favorited": false
     }
 

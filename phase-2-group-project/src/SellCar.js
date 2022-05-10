@@ -3,7 +3,7 @@ import React from "react";
 function SellCar() {
     return (
         <div className="SellCar">
-            Header
+            Sell Car
         </div>
     )
 }

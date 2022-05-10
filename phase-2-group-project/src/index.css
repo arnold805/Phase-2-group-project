@@ -8,6 +8,16 @@ body {
   background: blue
 }
 
+.car-name {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  word-spacing: 3px;
+}
+
+.car-condition {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

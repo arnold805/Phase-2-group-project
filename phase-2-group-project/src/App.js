@@ -1,26 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from './Header';
 import CarContainer from "./CarContainer";
+import Search from "./Search"
 
 function App() {
 
-  const [listings, setListings] = useState([])
-const URL = ('http://localhost:3000/vehicles')    
+  const [cars, setCars] = useState([]);
+  const URL = ('http://localhost:3000/vehicles')
     useEffect(() => { 
         fetch(URL)
         .then(r => r.json())
-        .then(data => console.log(data))
-    })
+        .then(data => setCars(data))         
+    }, []);
 
 
 
 
   return (
     <div className="App">
-      <Header/>
-      <CarContainer listings={listings} />
+      <Header />
+      <Search cars={cars} setCars={setCars}/>
+      <CarContainer cars={cars} />
     </div>
   );
 }
