@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Header from './Header';
 import CarContainer from "./CarContainer";
 import Search from "./Search"
+import NewCarForm from './NewCarForm';
 
 function App() {
 
@@ -14,7 +15,12 @@ function App() {
       return car.model.includes(e.target.value);
     })
     setFilteredCars(filteredVeh)
-  }
+  };
+  
+  const addCar = (car) => {
+    setCars([...cars, car]);
+  };
+
   useEffect(()=>{
     setFilteredCars(cars)
   }, [cars]);
@@ -37,6 +43,7 @@ function App() {
     <div className="App">
       <Header />
       <Search handleCarSearch={handleCarSearch}/>
+      <NewCarForm addCar={addCar}/>
       <CarContainer cars={filteredCars} />
     </div>
   );
