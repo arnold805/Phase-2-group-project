@@ -11,6 +11,10 @@ return (
         
        {cars.map((car) => {
            return <CarCard key={car.id} car={car} />
+        //        <Card.Group itemsPerRow={6}>      
+    //            {pokemonList}
+                  {/* {filteredPokemon} */}
+    //             </Card.Group>
 
        })}
         </ul>

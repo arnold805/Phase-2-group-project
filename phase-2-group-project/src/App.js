@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Header from './Header';
 import CarContainer from "./CarContainer";
 import Search from "./Search"
+import Navbar from "./Components/Navbar.js"
 
 function App() {
 
@@ -11,7 +12,10 @@ function App() {
 
   function handleCarSearch(e){
     const filteredVeh=cars.filter(car=>{
-      return car.model.includes(e.target.value);
+      return car.model.toLowerCase().includes(e.target.value.toLowerCase())
+    || car.make.toLowerCase().includes(e.target.value.toLowerCase())
+            
+      ;
     })
     setFilteredCars(filteredVeh)
   }
@@ -26,19 +30,29 @@ function App() {
         .then(data => setCars(data))         
     }, []);
   
-    
-
-
-
-
-
-
   return (
     <div className="App">
+      <Navbar/>
       <Header />
       <Search handleCarSearch={handleCarSearch}/>
       <CarContainer cars={filteredCars} />
     </div>
+
+
+    //   <NavBar />
+    //   <Route exact path={"/"}>
+    //     <Home />
+    //   </Route>
+    //   <Route exact path={"/movies"}>
+    //     <Movies />
+    //   </Route>
+    //   <Route exact path={"/directors"}>
+    //     <Directors />
+    //   </Route>
+    //   <Route exact path={"/actors"}>
+    //     <Actors />
+    //   </Route>
+
   );
 }
 

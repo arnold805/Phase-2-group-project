@@ -2,6 +2,7 @@ import React from "react";
 
 function CarCard({ car }) {
   return (
+    // <Card>
     <div>
       <div className="car">
         <div className="car-body">
@@ -14,6 +15,7 @@ function CarCard({ car }) {
         </div>
       </div>
     </div>
+    // </Card>
   );
 }
 

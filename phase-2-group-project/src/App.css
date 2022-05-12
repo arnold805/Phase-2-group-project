@@ -1,10 +1,16 @@
 .App {
   text-align: center;
+  columns: 3 auto;
+  align-content: stretch; 
+  column-fill: balance;
+  position:relative;
+ 
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +32,13 @@
 
 .App-link {
   color: #61dafb;
+}
+
+#search {
+    margin: 0 auto;
+    display: block;
+    position: center;
+    align-items: center;
 }
 
 @keyframes App-logo-spin {
