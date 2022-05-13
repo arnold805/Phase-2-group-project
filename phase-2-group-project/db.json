@@ -121,16 +121,6 @@
       "favorited": false
     },
     {
-      "id": 12,
-      "type": "SUV",
-      "make": "Chevrolet",
-      "model": "Blazer",
-      "condition": "Used",
-      "price": "$2,499",
-      "image": "https://static.cargurus.com/images/site/2008/03/19/11/02/2001_chevrolet_blazer-pic-60749-1600x1200.jpeg",
-      "favorited": false
-    },
-    {
       "type": "Truck",
       "make": "Chevrolet",
       "model": "Silverado",

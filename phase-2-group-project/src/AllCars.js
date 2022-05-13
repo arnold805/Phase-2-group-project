@@ -3,13 +3,13 @@ import CarCard from "./CarCard"
 import Search from "./Search";
 
 
-function AllCars({cars, handleCarSearch}) {
+function AllCars({cars}) {
 
 
 
 return (
     <main>
-        <Search handleCarSearch={handleCarSearch}/>
+        
         <ul className="cars">
             {cars.map((car) => {
                 return <CarCard key={car.id} car={car} />

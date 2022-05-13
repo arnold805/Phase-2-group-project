@@ -4,10 +4,9 @@ import Header from './Header';
 import AllCars from "./AllCars";
 import Search from "./Search"
 import Navbar from "./Components/Navbar.js"
-import NewCars from './Components/NewCars';
-import UsedCars from './Components/UsedCars';
-import SellCar from './Components/SellCar';
-import ContactUs from './Components/ContactUs';
+import NewCars from './Components/NewCars.js';
+import UsedCars from './Components/UsedCars.js';
+import SellCar from './Components/SellCar.js';
 import { BrowserRouter as Router, Routes, Route, Links } from "react-router-dom";
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
   const [cars, setCars] = useState([]);
   const [filteredCars, setFilteredCars] = useState(cars);
 
-  function handleCarSearch(e){
+  function handleCarSearch(e){   
     const filteredVeh=cars.filter(car=>{
       return car.model.toLowerCase().includes(e.target.value.toLowerCase())
     || car.make.toLowerCase().includes(e.target.value.toLowerCase())
@@ -34,18 +33,22 @@ function App() {
         .then(r => r.json())
         .then(data => setCars(data))         
     }, []);
+
   
   return (
     <div className="App">
       <Navbar/>
+      <br></br>
+      <Search handleCarSearch={handleCarSearch}/>
       <Header />
+      <div className="columns">
       <Routes>
-        <Route path={"/allcars"} element={<AllCars cars={filteredCars} />}/>
-        <Route path={"/newcars"} element={<NewCars/>}/>
-        <Route path={"/usedcars"} element={<UsedCars/>}/>
+        <Route path={"/allcars"} element={<AllCars handleCarSearch={handleCarSearch} cars={filteredCars} Search={Search} />}/>
+        <Route path={"/newcars"} element={<NewCars filteredCars={filteredCars} /> }  />
+        <Route path={"/usedcars"} element={<UsedCars filteredCars={filteredCars}/>}/>
         <Route path={"/sellcar"} element={<SellCar/>}/>
-        <Route path={"/contactus"} element={<ContactUs/>}/>
       </Routes>
+      </div>
       
       
     </div>
