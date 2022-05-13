@@ -1,6 +1,7 @@
 import React from "react";
 import CarCard from "./CarCard"
 import Search from "./Search";
+import './Allcars.css'
 
 
 function AllCars({cars}) {

@@ -1,0 +1,16 @@
+.sell-car-form {
+    text-align: center;
+}
+
+.add-car-listing-btn {
+    text-align: center;
+}
+
+.input {
+    text-align: center;
+}
+
+/* this fills in background to bottom of page, but does not  */
+html, body, input, textarea, select, button {
+    height: -webkit-fill-available;
+}
