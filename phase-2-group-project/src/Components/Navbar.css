@@ -17,6 +17,8 @@ nav {
 }
 .navigation {
     margin-right: 100px;
+    align-content: center;
+    margin-top: 28px;
     font-size: 20px;
     text-transform: uppercase;
     color: #f1f1f1;
