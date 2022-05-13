@@ -1,9 +1,14 @@
 import './App.css';
 import React, { useState, useEffect } from "react";
 import Header from './Header';
-import CarContainer from "./CarContainer";
+import AllCars from "./AllCars";
 import Search from "./Search"
 import Navbar from "./Components/Navbar.js"
+import NewCars from './Components/NewCars';
+import UsedCars from './Components/UsedCars';
+import SellCar from './Components/SellCar';
+import ContactUs from './Components/ContactUs';
+import { BrowserRouter as Router, Routes, Route, Links } from "react-router-dom";
 
 function App() {
 
@@ -34,25 +39,16 @@ function App() {
     <div className="App">
       <Navbar/>
       <Header />
-      <Search handleCarSearch={handleCarSearch}/>
-      <CarContainer cars={filteredCars} />
+      <Routes>
+        <Route path={"/allcars"} element={<AllCars cars={filteredCars} />}/>
+        <Route path={"/newcars"} element={<NewCars/>}/>
+        <Route path={"/usedcars"} element={<UsedCars/>}/>
+        <Route path={"/sellcar"} element={<SellCar/>}/>
+        <Route path={"/contactus"} element={<ContactUs/>}/>
+      </Routes>
+      
+      
     </div>
-
-
-    //   <NavBar />
-    //   <Route exact path={"/"}>
-    //     <Home />
-    //   </Route>
-    //   <Route exact path={"/movies"}>
-    //     <Movies />
-    //   </Route>
-    //   <Route exact path={"/directors"}>
-    //     <Directors />
-    //   </Route>
-    //   <Route exact path={"/actors"}>
-    //     <Actors />
-    //   </Route>
-
   );
 }
 
